@@ -5,8 +5,37 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-image: url("../images/cover-image-light.png");
+  --background-color: #FFF1F7;
+  --decorated-zone-color: #353430;
+  --cover-title-text-color: #FFC2E6;
+  --cover-title-shadow-color: #FF8DCB;
+  --title-decor-text: #353430;
+  --title-decor-bg-color: #FF8DCB;
+  --main-title-text-color: #353430;
+  --card-text-color: #353430;
+  --card-shadow-color: #FF8DCB;
+  --bottom-hover-color: rgba(50, 49, 45, 0.4);
+  --bottom-color: #353430;
+  --font-family: 'IBM Plex mono', sans-serif;
+  --decorative-text-dispaly: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url("../images/cover-image-light.png");
+    --background-color: #FFF1F7;
+    --decorated-zone-color: #353430;
+    --cover-title-text-color: #FFC2E6;
+    --cover-title-shadow-color: #FF8DCB;
+    --title-decor-text: #353430;
+    --title-decor-bg-color: #FF8DCB;
+    --main-title-text-color: #353430;
+    --card-text-color: #353430;
+    --card-shadow-color: #FF8DCB;
+    --bottom-hover-color: rgba(50, 49, 45, 0.4);
+    --bottom-color: #353430;
+    --decorative-text-dispaly: none;
+  }
+
 }
