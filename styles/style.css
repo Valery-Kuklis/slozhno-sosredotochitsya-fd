@@ -12,11 +12,11 @@
 
 .header {
   display: grid;
-  max-height: 100vh;
+  height: 100vh;
   min-height: 668px;
   padding-right: 10px;
   padding-left: 10px;
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: 1fr min-content 1fr;
   grid-template-columns: auto;
   font-family: var(--font-family), monospace;
   position: relative;
@@ -66,6 +66,7 @@
   padding-bottom: 66px;
   display: grid;
   justify-content: end;
+  height: min-content;
 }
 
 .cover__description-text {
@@ -220,7 +221,7 @@ h1 {
 
 .header__theme-menu-button:focus-visible {
   border: none;
-  text-decoration: underline;
+  border-bottom: 1px solid var(--bottom-color);
   text-underline-offset: 4px;
 }
 
